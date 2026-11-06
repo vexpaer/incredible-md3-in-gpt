@@ -17,6 +17,8 @@ Last source review: 2026-11-06.
 ### Apple
 
 - [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) — platform foundations, patterns, components, and accessibility.
+- [Apple HIG: Design principles](https://developer.apple.com/design/human-interface-guidelines/design-principles/) — the current eight principles: purpose, agency, responsibility, familiarity, flexibility, simplicity, craft, and delight.
+- [WWDC26: Principles of great design](https://developer.apple.com/videos/play/wwdc2026/250/) — Apple's explanation of these principles and the distinction between simplicity and visual minimalism.
 - [Apple HIG: Layout](https://developer.apple.com/design/human-interface-guidelines/layout) — adaptation to window size, orientation, text size, and system environment.
 
 ### Flutter
@@ -26,7 +28,7 @@ Last source review: 2026-11-06.
 ## Agent design references
 
 - [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) — searchable UI/UX recommendations and stack-specific guidance. Its [native/mobile pro rules](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-ux-pro-max/references/pro-rules.md) informed the mobile review topics: touch targets, safe areas, dark-mode contrast, accessibility semantics, and interaction states. The project is MIT-licensed.
-- [Anthropic Frontend Design](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design) — a useful reference for deliberate visual direction and product-specific design decisions. Consult its current license terms before reusing any of its text or files.
+- [Anthropic Frontend Design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) — a reference for product-grounded art direction, a design plan before implementation, critique against generic defaults, restraint, and iteration. This repository adapts the workflow in original wording; it does not bundle or copy the upstream skill.
 - [Taste-Skill](https://github.com/Leonxlnx/taste-skill) — design-variance and visual-density controls, plus anti-generic design thinking. The project is MIT-licensed.
 - [Supanova Design Skill](https://github.com/uxjoseph/supanova-design-skill) — a redesign diagnosis workflow and aesthetic critique. Its repository is oriented toward landing pages; this skill borrows only the general idea of diagnosing before changing and does not adopt its web-specific prescriptions.
 - [Claude Design: launch announcement](https://www.anthropic.com/news/claude-design-anthropic-labs) — design-system extraction from code and design files, prototype exploration, inline comments, direct editing, custom controls, and handoff to implementation.
@@ -73,3 +75,9 @@ FlClash is GPL-3.0. This repository documents design observations and links to u
 - Do not copy large passages, proprietary skill files, source code, images, or screenshots into this repository.
 - If a future contribution reuses external code or text, verify the upstream license and include the required notices.
 - Treat upstream projects as evolving references; re-check official documentation before relying on version-specific details.
+
+
+### Apple-inspired minimalism and product principles
+
+- [Apple design principles guide](apple-design-principles.md) — an implementation-oriented adaptation of Apple's current eight HIG principles, with platform-aware minimalism requirements.
+- [Frontend design method](frontend-design-method.md) — an original mobile-focused synthesis of Anthropic Frontend Design's product-grounded planning, pre-implementation critique, restraint, and screenshot iteration.

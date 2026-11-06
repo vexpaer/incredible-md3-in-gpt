@@ -34,6 +34,11 @@ Review the screenshots at actual rendered size. Check:
 - Alignment: do edges, baselines, icon centers, and control positions line up?
 - Rhythm: are related items close and separate groups clearly distinct?
 - Density: is the amount of information appropriate for the task frequency?
+- Restraint: is there one clear focal point, with supporting elements kept quiet?
+- Minimalism: do whitespace, alignment, typography, and tonal grouping do more work than redundant cards, borders, and effects?
+- Discoverability: have common actions and necessary information remained easy to find, rather than being hidden for visual sparseness?
+- Apple principles: are purpose, agency, responsibility, familiarity, flexibility, simplicity, craft, and delight reflected where relevant?
+- Platform fit: does the app follow the target platform's conventions instead of copying another platform's controls?
 - Typography: are titles, body text, metadata, and numbers clearly differentiated?
 - Copy density: does every visible string serve navigation, identity, value, action, feedback, or essential guidance?
 - Explanatory noise: are there subtitles beneath obvious headings, descriptions beneath every setting, duplicated labels, decorative captions, or tiny gray filler text?
@@ -90,13 +95,14 @@ Score each area from 0 to 5:
 | Platform behavior | Breaks conventions | Mostly native | Natural navigation, gestures, insets, and input |
 | Accessibility | Major barriers | Basic support | Contrast, semantics, scaling, and motion are verified |
 | Visual polish | Generic or unfinished | Usable and coherent | Distinctive and carefully refined |
+| Restraint and identity | Cluttered or generic | Mostly restrained | Product-specific, minimal, and memorable without noise |
 
-Maximum: 50 points.
+Maximum: 55 points.
 
 Suggested acceptance:
-- 44–50: ready for delivery, provided no critical blocker remains.
-- 37–43: good, but fix the lowest-scoring high-impact areas.
-- Below 37: revise the design direction or implementation before delivery.
+- 48–55: ready for delivery, provided no critical blocker remains.
+- 40–47: good, but fix the lowest-scoring high-impact areas.
+- Below 40: revise the design direction or implementation before delivery.
 
 A score is a review aid, not a substitute for judgment. Never average away a critical defect.
 
@@ -110,6 +116,8 @@ Any of these blocks delivery regardless of score:
 - A critical state is communicated only by color.
 - Back navigation or modal dismissal traps the user.
 - Repeated explanatory microcopy or duplicated small captions dominate the screen and obscure its hierarchy.
+- Common functionality or decision-critical information is hidden solely to make the interface look minimal.
+- Platform-specific navigation or controls have been replaced with another platform's conventions without a clear product reason.
 - The UI has not been run and the final response claims visual verification.
 
 ## Honest reporting

@@ -1,6 +1,6 @@
 # Design foundations: turning MD3 into a product identity
 
-Material Design 3 is a system of design decisions: color, type, shape, components, state, motion, and adaptive behavior. A good app uses those decisions consistently while making a product-specific visual choice. A default theme with every component enabled is only a starting point.
+Material Design 3 is a system of design decisions: color, type, shape, components, state, motion, and adaptive behavior. Material 3 Expressive expands this foundation with research-backed updates to theming, components, motion, typography, and more. A good app uses these decisions consistently while making a product-specific visual choice. A default theme with every component enabled is only a starting point.
 
 ## 1. Start with a visual thesis
 
@@ -174,3 +174,49 @@ Whitespace is a layout decision, not a vacancy that needs to be filled with copy
 Keep concise explanations only when they materially affect a decision or safe action: permissions, destructive operations, unfamiliar advanced settings, non-obvious consequences, validation, errors, and useful empty states. Preserve accessibility labels and form labels even when the visible UI is minimal.
 
 Use the full rules and examples in [copy-discipline.md](copy-discipline.md).
+
+
+## 12. Material 3 Expressive: purposeful expression
+
+M3 Expressive extends the MD3 system across theming, components, motion, typography, and shape. Use it as a first-class direction when it fits the product and target platform.
+
+- Expression should strengthen hierarchy and recognition, not add decoration indiscriminately.
+- Give one or two high-value moments emphasis; keep repeated rows, settings, logs, and dense technical data calm.
+- Use richer color roles semantically and preserve readable on-color pairings.
+- Use expressive shapes where they communicate grouping, identity, or state. Avoid maximizing corner radii on every component.
+- Use variable typography only where supported and where it improves hierarchy.
+- Use spring motion and shape morphing to explain spatial relationships or state changes; respect reduced motion.
+- Do not add a hero moment to every screen.
+- Keep the minimal-copy policy intact. Expressive design does not require subtitles, labels that repeat content, or explanatory filler.
+
+Implementation differs by stack: Jetpack Compose documents M3 Expressive support; Flutter requires checking the actual package/API support; iOS should follow HIG and adopt only the transferable design principles.
+
+Read [material-3-expressive.md](material-3-expressive.md) for the detailed guidance and platform routing.
+
+
+## 13. Apple-inspired minimalism and product principles
+
+Use the current Apple design principles as a product-quality lens, even when the target platform is Android or cross-platform. The platform's own design system remains authoritative for native components and navigation.
+
+- **Purpose:** prioritize the user's real job and remove features or decoration without a clear benefit.
+- **Agency:** keep navigation predictable, make actions reversible where possible, and provide immediate feedback.
+- **Responsibility:** make permissions, privacy, safety, and consequential actions transparent.
+- **Familiarity:** use recognizable patterns and consistent behavior.
+- **Flexibility:** adapt to supported devices, input methods, text sizes, and accessibility settings.
+- **Simplicity:** reduce friction, steps, redundancy, and visual noise.
+- **Craft:** refine alignment, typography, component states, performance, and motion.
+- **Delight:** create a fitting emotional quality through useful details, not decoration.
+
+### Minimalism is visual restraint, not feature hiding
+
+- Give each screen one clear focal point; keep supporting content visually quiet.
+- Prefer whitespace, alignment, typography, and tonal grouping before borders and cards.
+- Use a compact brand palette and reserve strong color for meaningful actions or states.
+- Use a small set of surfaces, shapes, and type roles.
+- Avoid decorative gradients, blur, glow, shadows, and non-interactive motion without a product reason.
+- Keep common actions discoverable and necessary information available without unnecessary taps.
+- Preserve visible labels, accessibility semantics, error recovery, and decision-critical context.
+
+A sparse screen that hides functionality is not simple. A restrained screen with clear hierarchy and exactly the information needed is.
+
+Read [apple-design-principles.md](apple-design-principles.md) for the full platform-aware guidance and [frontend-design-method.md](frontend-design-method.md) for the plan-and-critique workflow.

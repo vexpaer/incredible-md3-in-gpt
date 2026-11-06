@@ -192,3 +192,31 @@ M3 Expressive extends the MD3 system across theming, components, motion, typogra
 Implementation differs by stack: Jetpack Compose documents M3 Expressive support; Flutter requires checking the actual package/API support; iOS should follow HIG and adopt only the transferable design principles.
 
 Read [material-3-expressive.md](material-3-expressive.md) for the detailed guidance and platform routing.
+
+
+## 13. Apple-inspired minimalism and product principles
+
+Use the current Apple design principles as a product-quality lens, even when the target platform is Android or cross-platform. The platform's own design system remains authoritative for native components and navigation.
+
+- **Purpose:** prioritize the user's real job and remove features or decoration without a clear benefit.
+- **Agency:** keep navigation predictable, make actions reversible where possible, and provide immediate feedback.
+- **Responsibility:** make permissions, privacy, safety, and consequential actions transparent.
+- **Familiarity:** use recognizable patterns and consistent behavior.
+- **Flexibility:** adapt to supported devices, input methods, text sizes, and accessibility settings.
+- **Simplicity:** reduce friction, steps, redundancy, and visual noise.
+- **Craft:** refine alignment, typography, component states, performance, and motion.
+- **Delight:** create a fitting emotional quality through useful details, not decoration.
+
+### Minimalism is visual restraint, not feature hiding
+
+- Give each screen one clear focal point; keep supporting content visually quiet.
+- Prefer whitespace, alignment, typography, and tonal grouping before borders and cards.
+- Use a compact brand palette and reserve strong color for meaningful actions or states.
+- Use a small set of surfaces, shapes, and type roles.
+- Avoid decorative gradients, blur, glow, shadows, and non-interactive motion without a product reason.
+- Keep common actions discoverable and necessary information available without unnecessary taps.
+- Preserve visible labels, accessibility semantics, error recovery, and decision-critical context.
+
+A sparse screen that hides functionality is not simple. A restrained screen with clear hierarchy and exactly the information needed is.
+
+Read [apple-design-principles.md](apple-design-principles.md) for the full platform-aware guidance and [frontend-design-method.md](frontend-design-method.md) for the plan-and-critique workflow.

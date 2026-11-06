@@ -44,7 +44,8 @@ Score each area from 0 to 5.
 | Platform behavior | | |
 | Accessibility | | |
 | Visual polish | | |
-| **Total / 45** | | |
+| Restraint and identity | | |
+| **Total / 55** | | |
 
 ## Visible-copy audit
 
@@ -70,3 +71,19 @@ Score each area from 0 to 5.
 - Remaining risks:
 - Tests run:
 - Visual verification status:
+
+
+## Apple principles and minimalism
+
+- [ ] The screen serves a clear purpose and prioritizes the user's main task
+- [ ] Users can navigate, cancel, and recover from mistakes
+- [ ] Permissions, privacy, and consequential actions are transparent
+- [ ] Familiar controls behave consistently
+- [ ] Layout adapts to supported devices, inputs, and accessibility settings
+- [ ] The interface is concise and frictionless without hiding functionality
+- [ ] Typography, alignment, feedback, and performance are carefully finished
+- [ ] Delight comes from useful details rather than decoration
+- [ ] One clear focal point; supporting content remains quiet
+- [ ] Every visible container, border, effect, and animation has a purpose
+- [ ] Necessary information, labels, and accessibility semantics remain discoverable
+- [ ] Platform-specific conventions are respected

@@ -130,6 +130,7 @@ For a media, creative, or lifestyle app, the product may support more expressive
 ## Sources
 
 - [Material Design 3 in Jetpack Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) — official explanation of M3 Expressive as an expansion of Material Design 3, including theming, components, motion, typography, and Material You personalization.
+- [A more personal, expressive phone experience](https://blog.google/products-and-platforms/platforms/android/material-3-expressive-android-wearos-launch/) — Google's Android announcement describing how M3 Expressive builds on Material You for phones and adds spring motion, dynamic color, responsive components, and emphasized typography.
 - [Benefits of expressive design](https://developer.android.com/design/ui/wear/guides/get-started/benefits) — Google's research background and guidance to start from user needs, prioritize functionality, preserve accessibility, and iterate.
 - [Levels of expression](https://developer.android.com/design/ui/wear/guides/get-started/levels-expression) — examples of foundational, excellent, and transformative expression across components, color, typography, shape, motion, and adaptive design.
 - [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — a product implementation that uses a Material 3 Expressive shape for an empty-state glyph while keeping the surface system restrained.

@@ -2,7 +2,7 @@
 
 **A mobile-first design skill for AI agents that need to build native app interfaces that feel designed, not generated.**
 
-Material Design 3 gives an app a coherent design language; Material 3 Expressive expands it with richer theming, components, motion, and typography. This skill teaches an agent how to turn those systems into a distinctive, usable product: research the right references, define a deliberate visual system, design around real tasks, implement platform-aware components, and verify the result with screenshots.
+Material Design 3 gives an app a coherent design language; Material 3 Expressive expands it with richer theming, components, motion, and typography. This skill combines that system with Apple's current product-design principles and a restrained minimalist visual posture. It teaches agents to ground design in the product, plan and critique a distinctive direction before coding, build around real tasks, respect native platform behavior, and verify the result with screenshots.
 
 ## Install
 
@@ -28,17 +28,20 @@ This skill changes the workflow:
 
 1. Understand the product, its primary tasks, platform, and existing code before styling.
 2. Study at least one authoritative platform guideline and one relevant, high-quality product reference.
-3. Define a visual thesis and semantic design tokens before building screens.
+3. Define a visual thesis and compact design plan—including color, typography, layout, shape, motion, and a clear focal point—then critique it against generic AI-generated defaults before building screens.
 4. Use Material 3 as a foundation and Material 3 Expressive as a first-class, selectively applied design direction—not as a finished visual identity.
-5. Borrow the strongest product-design lessons from FlClash: tonal surface hierarchy, restrained state color, reusable primitives, deliberate theme behavior, and adaptive layouts.
-6. Design real screen states and platform interactions, not just a static happy-path mockup.
-7. Keep visible copy minimal: remove explanatory subtitles and helper text unless they change a decision or enable a safe action.
-8. Run the app, inspect screenshots at multiple sizes and themes, fix defects, and inspect again.
+5. Apply Apple's current principles—purpose, agency, responsibility, familiarity, flexibility, simplicity, craft, and delight—while preserving each target platform's native conventions.
+6. Borrow the strongest product-design lessons from FlClash: tonal surface hierarchy, restrained state color, reusable primitives, deliberate theme behavior, and adaptive layouts.
+7. Design real screen states and platform interactions, not just a static happy-path mockup.
+8. Keep the interface visually minimal and visible copy concise without hiding features, necessary information, or accessibility labels.
+9. Run the app, inspect screenshots at multiple sizes and themes, fix defects, and inspect again.
 
 ## Design philosophy
 
 - **Product first:** task clarity and information hierarchy outrank decoration.
 - **MD3 + M3 Expressive:** use semantic color roles, expressive typography, shape, motion, components, elevation, and state layers deliberately.
+- **Apple-inspired principles:** prioritize purpose, agency, responsibility, familiarity, flexibility, simplicity, craft, and product-relevant delight.
+- **Minimalism:** use one clear focal point, quiet supporting surfaces, deliberate whitespace, concise copy, and no decoration without a reason. Never hide useful functionality to make a screen look sparse.
 - **A distinct visual point of view:** make deliberate choices for the product instead of accepting framework defaults.
 - **Restraint:** cards, borders, shadows, gradients, blur, animation, and visible copy each need a reason. No explanatory microcopy by default.
 - **Native behavior:** respect Android and iOS conventions instead of forcing one platform's patterns everywhere.
@@ -49,12 +52,12 @@ This skill changes the workflow:
 The skill is an original synthesis informed by:
 
 - [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) — searchable design guidance, stack-specific recommendations, and a native/mobile pre-delivery checklist.
-- [Anthropic Frontend Design](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design) — intentional visual direction and resistance to generic templates.
+- [Anthropic Frontend Design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) — product-grounded art direction, plan-before-code workflow, critique against generic templates, and visual restraint.
 - [Taste-Skill](https://github.com/Leonxlnx/taste-skill) — adjustable design variance and visual-density thinking.
 - [Supanova Design Skill](https://github.com/uxjoseph/supanova-design-skill) — design diagnosis and focused redesign workflow; its landing-page-specific prescriptions are not treated as mobile-app rules.
 - [Claude Design](https://claude.com/product/design) — importing real design systems, grounding prototypes in code and screenshots, targeted iteration, and design-to-code handoff.
 - [FlClash](https://github.com/chen08209/FlClash) — a cross-platform app with a Material You / MD3 foundation, explicit M3 Expressive shape usage, Apple-influenced interaction, and a carefully maintained product-specific UI system.
-- Official [Android design guidance](https://developer.android.com/design/ui/mobile), [Material 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3), [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/), and [Flutter adaptive design](https://docs.flutter.dev/ui/adaptive-responsive).
+- Official [Android design guidance](https://developer.android.com/design/ui/mobile), [Material 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3), [Apple HIG design principles](https://developer.apple.com/design/human-interface-guidelines/design-principles/), [Apple HIG](https://developer.apple.com/design/human-interface-guidelines/), and [Flutter adaptive design](https://docs.flutter.dev/ui/adaptive-responsive).
 
 These projects are references, not dependencies. Their code, assets, and distinctive screens are not bundled or copied into this repository.
 
@@ -63,9 +66,11 @@ These projects are references, not dependencies. Their code, assets, and distinc
 - .agents/skills/incredible-md3-in-gpt/SKILL.md — the portable agent skill.
 - .agents/skills/incredible-md3-in-gpt/references/design-foundations.md — how to turn MD3 into a coherent visual system.
 - .agents/skills/incredible-md3-in-gpt/references/material-3-expressive.md — M3 Expressive principles and Android, Flutter, and iOS implementation guidance.
+- .agents/skills/incredible-md3-in-gpt/references/apple-design-principles.md — Apple's current eight principles and platform-aware minimalist design requirements.
+- .agents/skills/incredible-md3-in-gpt/references/frontend-design-method.md — product-grounded design planning, critique, restraint, and iteration inspired by Anthropic Frontend Design.
 - .agents/skills/incredible-md3-in-gpt/references/flclash-case-study.md — design and architecture lessons from FlClash.
 - .agents/skills/incredible-md3-in-gpt/references/native-mobile-patterns.md — navigation, lists, settings, forms, dashboards, states, and adaptive behavior.
-- .agents/skills/incredible-md3-in-gpt/references/visual-review.md — screenshot workflow, acceptance gates, and a scoring rubric.
+- .agents/skills/incredible-md3-in-gpt/references/visual-review.md — screenshot workflow, acceptance gates, and a scoring rubric including restraint and distinctiveness.
 - .agents/skills/incredible-md3-in-gpt/references/copy-discipline.md — strict rules for minimal visible copy and removing explanatory microcopy.
 - .agents/skills/incredible-md3-in-gpt/references/research-sources.md — source index and attribution notes.
 - templates/design-brief.md — a compact brief to complete before implementation.

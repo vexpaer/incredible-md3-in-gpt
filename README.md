@@ -61,12 +61,12 @@ These projects are references, not dependencies. Their code, assets, and distinc
 ## Contents
 
 - .agents/skills/incredible-md3-in-gpt/SKILL.md — the portable agent skill.
-- references/design-foundations.md — how to turn MD3 into a coherent visual system.
-- references/flclash-case-study.md — design and architecture lessons from FlClash.
-- references/native-mobile-patterns.md — navigation, lists, settings, forms, dashboards, states, and adaptive behavior.
-- references/visual-review.md — screenshot workflow, acceptance gates, and a scoring rubric.
-- references/copy-discipline.md — strict rules for minimal visible copy and removing explanatory microcopy.
-- references/research-sources.md — source index and attribution notes.
+- .agents/skills/incredible-md3-in-gpt/references/design-foundations.md — how to turn MD3 into a coherent visual system.
+- .agents/skills/incredible-md3-in-gpt/references/flclash-case-study.md — design and architecture lessons from FlClash.
+- .agents/skills/incredible-md3-in-gpt/references/native-mobile-patterns.md — navigation, lists, settings, forms, dashboards, states, and adaptive behavior.
+- .agents/skills/incredible-md3-in-gpt/references/visual-review.md — screenshot workflow, acceptance gates, and a scoring rubric.
+- .agents/skills/incredible-md3-in-gpt/references/copy-discipline.md — strict rules for minimal visible copy and removing explanatory microcopy.
+- .agents/skills/incredible-md3-in-gpt/references/research-sources.md — source index and attribution notes.
 - templates/design-brief.md — a compact brief to complete before implementation.
 - templates/visual-review.md — a repeatable review report.
 

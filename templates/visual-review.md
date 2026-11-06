@@ -38,12 +38,19 @@ Score each area from 0 to 5.
 | Hierarchy | | |
 | Layout and rhythm | | |
 | Typography | | |
+| Copy discipline | | |
 | Color and surfaces | | |
 | Components | | |
 | Platform behavior | | |
 | Accessibility | | |
 | Visual polish | | |
 | **Total / 45** | | |
+
+## Visible-copy audit
+
+- [ ] Every visible string serves navigation, identity, value, action, feedback, or essential guidance
+- [ ] No redundant subtitles, setting descriptions, duplicated labels, decorative captions, or tiny filler text
+- [ ] Essential permissions, destructive-action consequences, validation, errors, and accessibility labels remain
 
 ## Interaction checks
 

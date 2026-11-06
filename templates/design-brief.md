@@ -83,3 +83,14 @@ For each screen, define:
 - Large text:
 - Reduced motion:
 - Interactions to exercise:
+
+
+## Apple-inspired principles and minimalism
+
+- Default visual posture: restrained, product-specific minimalism.
+- Which of Apple's current principles matter most here: purpose / agency / responsibility / familiarity / flexibility / simplicity / craft / delight?
+- What is the single visual focal point on each main screen?
+- Which one expressive treatment (if any) makes the product or task more recognizable?
+- What containers, borders, shadows, labels, gradients, or animations can be removed?
+- Which actions and information must remain immediately discoverable?
+- Which native patterns must be preserved for each target platform?

@@ -54,7 +54,7 @@ A richer palette should make information easier to understand, not make the scre
 - Do not make every card, button, chip, and sheet maximally rounded.
 - Avoid mixing arbitrary radii with system shape tokens.
 
-FlClash's UI work guide is a useful example: it references a Material 3 Expressive shape from `material_new_shapes` for an empty-state glyph while keeping the surrounding interface disciplined.
+FlClash's UI work guide is a useful example: it references a Material 3 Expressive shape from `material_new_shapes` for an empty-state glyph while keeping the surrounding interface disciplined. Pair this with Apple's product principles and restrained minimalism: expressive moments should strengthen the task hierarchy, not turn every surface into decoration.
 
 ## 5. Typography: create hierarchy without inflating everything
 
@@ -133,4 +133,12 @@ For a media, creative, or lifestyle app, the product may support more expressive
 - [A more personal, expressive phone experience](https://blog.google/products-and-platforms/platforms/android/material-3-expressive-android-wearos-launch/) — Google's Android announcement describing how M3 Expressive builds on Material You for phones and adds spring motion, dynamic color, responsive components, and emphasized typography.
 - [Benefits of expressive design](https://developer.android.com/design/ui/wear/guides/get-started/benefits) — Google's research background and guidance to start from user needs, prioritize functionality, preserve accessibility, and iterate.
 - [Levels of expression](https://developer.android.com/design/ui/wear/guides/get-started/levels-expression) — examples of foundational, excellent, and transformative expression across components, color, typography, shape, motion, and adaptive design.
-- [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — a product implementation that uses a Material 3 Expressive shape for an empty-state glyph while keeping the surface system restrained.
+- [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — surface levels, tonal hierarchy, state color, and elevation.
+- [FlClash UI work skill](https://github.com/chen08209/FlClash/blob/main/.agents/skills/ui-work/SKILL.md) — the explicit Material 3 Expressive empty-state shape reference.
+
+
+## 10. Keep expressive treatments compatible with minimalism
+
+Use M3 Expressive as a richer vocabulary inside a restrained composition. Choose one or two moments where expressive shape, typography, color, or motion makes the task or state easier to recognize. Keep repeated rows, settings, logs, and dense data calm.
+
+Apple-inspired product principles can guide purpose, agency, simplicity, and craft across platforms, but use the target platform's own navigation and component conventions. See [apple-design-principles.md](apple-design-principles.md).

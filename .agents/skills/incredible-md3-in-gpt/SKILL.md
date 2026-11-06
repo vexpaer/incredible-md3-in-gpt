@@ -1,6 +1,6 @@
 ---
 name: incredible-md3-in-gpt
-description: Use when designing, implementing, redesigning, or reviewing a native mobile app UI for Android or iOS, especially when Material Design 3 or Material 3 Expressive is requested or the result looks generic. Covers visual direction, M3 Expressive, design tokens, native patterns, FlClash-inspired surface hierarchy, adaptive layouts, accessibility, minimal UI copy, and screenshot-based quality review.
+description: Use when designing, implementing, redesigning, or reviewing a native mobile app UI for Android or iOS, especially when Material Design 3 or Material 3 Expressive is requested or the result looks generic. Covers visual direction, M3 Expressive, Apple design principles, restrained minimalism, design tokens, native patterns, FlClash-inspired surface hierarchy, adaptive layouts, accessibility, minimal UI copy, and screenshot-based quality review.
 ---
 
 # Incredible MD3 in GPT
@@ -97,7 +97,7 @@ For a new app or product-wide redesign, write a compact design plan before styli
 - Shape, surface, component, and motion rules, including where M3 Expressive adds useful emphasis.
 - The Apple design principles most relevant to the product and how minimalist composition will preserve discoverability.
 
-Critique the plan before writing UI code. Ask whether its palette, typography, and layout are specific to this product or interchangeable with any generic app. Reject default card grids, decorative gradients, repeated entrance animations, filler labels, and other template patterns unless the brief gives them a real purpose. Keep one memorable visual decision and let the rest of the screen support it. See [frontend-design-method.md](frontend-design-method.md).
+Critique the plan before writing UI code. Ask whether its palette, typography, and layout are specific to this product or interchangeable with any generic app. Reject default card grids, decorative gradients, repeated entrance animations, filler labels, and other template patterns unless the brief gives them a real purpose. Keep one memorable visual decision and let the rest of the screen support it. See [frontend-design-method.md](references/frontend-design-method.md).
 
 ### 3.2 Enforce a minimal visible-copy budget
 
@@ -146,7 +146,7 @@ Read references/design-foundations.md and references/material-3-expressive.md fo
 
 ### 5.1 Apply Apple's principles and restrained minimalism
 
-Use the current eight principles in [apple-design-principles.md](apple-design-principles.md) as product-quality requirements. In practice:
+Use the current eight principles in [apple-design-principles.md](references/apple-design-principles.md) as product-quality requirements. In practice:
 - Make the product's purpose and primary action immediately understandable.
 - Keep users in control with predictable navigation, clear feedback, and recovery from mistakes.
 - Treat privacy, permissions, accessibility, and consequential actions responsibly.

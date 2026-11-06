@@ -51,7 +51,7 @@ If the request already gives enough context, make a design decision and proceed.
 
 ### 2. Research references, not just screenshots
 
-Use at least two relevant reference sources:
+For a new app or product-wide redesign, use at least two relevant reference sources. For a narrow component or interaction fix, one targeted official source plus the existing project's nearby implementation is enough.
 
 1. **Platform authority:** current official guidance for the target platform. Use Android Design and Material 3 for Android, Apple HIG for iOS, and Flutter adaptive guidance for Flutter apps. For a cross-platform app, check both Android and iOS behavior.
 2. **Product benchmark:** inspect a well-designed app with a comparable information architecture or interaction model. Use FlClash as a useful reference for utility apps, dashboards, settings, themes, and cross-platform adaptation. Select a different benchmark when the product category calls for it.

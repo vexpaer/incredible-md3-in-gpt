@@ -9,7 +9,7 @@ Last source review: 2026-11-06.
 ### Android and Material
 
 - [Android design for mobile](https://developer.android.com/design/ui/mobile) — current Android foundations, styles, layout, behaviors, components, and accessibility.
-- [Material 3 in Jetpack Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) — Material 3 theming, color roles, typography, shapes, elevation, components, and accessibility.
+- [Material 3 in Jetpack Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) — official Material You and Material 3 Expressive implementation; explains M3 Expressive as an expansion covering theming, components, motion, typography, and more.
 - [Material components for mobile](https://developer.android.com/design/ui/mobile/guides/components/material-overview) — containment, navigation, selection, and input patterns.
 - [Android layout and navigation patterns](https://developer.android.com/design/ui/mobile/guides/layout-and-content/layout-and-nav-patterns) — adaptive navigation and layout choices.
 
@@ -47,7 +47,7 @@ This skill translates those practices into repository inspection, screen referen
 ## Product case study
 
 - [FlClash](https://github.com/chen08209/FlClash) — cross-platform Flutter proxy client. Its README describes a Material You visual foundation with Apple-style interaction.
-- [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — a detailed example of tonal surface hierarchy, restrained state color, and selective elevation.
+- [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — a detailed example of tonal surface hierarchy, restrained state color, selective elevation, and a concrete Material 3 Expressive shape used in an empty state.
 - [FlClash UI work skill](https://github.com/chen08209/FlClash/blob/main/.agents/skills/ui-work/SKILL.md) — component ownership, reusable UI primitives, glyphs, typography, sheets, and interaction conventions.
 - [FlClash theme settings](https://github.com/chen08209/FlClash/blob/main/lib/views/theme.dart) — theme previews and user-facing theme controls.
 - [FlClash theme manager](https://github.com/chen08209/FlClash/blob/main/lib/manager/theme_manager.dart) — centralized theme and system UI behavior.
@@ -55,6 +55,11 @@ This skill translates those practices into repository inspection, screen referen
 - [FlClash dashboard widget registry](https://github.com/chen08209/FlClash/blob/main/lib/views/dashboard/widget_registry.dart) — modular dashboard composition.
 
 FlClash is GPL-3.0. This repository documents design observations and links to upstream sources; it does not copy FlClash implementation code or assets.
+
+### Material 3 Expressive guidance
+
+- [Material 3 Expressive design guidance](https://developer.android.com/design/ui/wear/guides/get-started/benefits) — Google's research rationale and practical advice: start from user needs, prioritize functionality, preserve accessibility, and iterate.
+- [Levels of expression](https://developer.android.com/design/ui/wear/guides/get-started/levels-expression) — a useful taxonomy across components, color, typography, shape, motion, and adaptive behavior. These Wear-specific examples are design references, not phone-specific requirements.
 
 ## Agent Skills distribution
 

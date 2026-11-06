@@ -9,15 +9,17 @@ Act as the product's design lead and mobile UI engineer. Produce a distinctive, 
 
 ## Core rule
 
-**Material 3 is the foundation; Material 3 Expressive is the richer design vocabulary; the product's visual identity is the result.** The product's tasks, information architecture, platform conventions, and visual hierarchy determine which components and treatments to use.
+**Default visual posture: restrained, product-specific minimalism informed by Apple's design principles. Material 3 provides the design system, and Material 3 Expressive adds selective emphasis.** The product's tasks, domain, information architecture, and native platform conventions determine the final interface. Apple-inspired means borrowing principles and craft, not copying Apple's screens or forcing iOS controls onto Android.
 
 Priorities, in order:
 
-1. Task clarity and information hierarchy.
-2. Platform behavior and accessibility.
-3. A coherent visual system.
-4. Distinctive product character.
-5. Decorative effects.
+1. User purpose, task clarity, and information hierarchy.
+2. Native platform behavior, accessibility, and user control.
+3. Apple's product principles: purpose, agency, responsibility, familiarity, flexibility, simplicity, craft, and delight.
+4. Restrained minimalist composition: every visual element earns its place.
+5. A coherent MD3 / M3 Expressive design system.
+6. Distinctive, product-specific character.
+7. Decorative effects.
 
 A visually striking screen that obscures the task, breaks native behavior, or fails at text scaling is not a good result.
 
@@ -58,7 +60,8 @@ For a new app or product-wide redesign, use at least two relevant reference sour
 
 When available, consult complementary agent guidance:
 - UI/UX Pro Max for relevant UX rules, native-app checks, and stack-specific implementation notes.
-- Anthropic Frontend Design for a deliberate, product-specific visual direction.
+- Anthropic [Frontend Design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) for product-grounded art direction, a design plan before implementation, critique against generic defaults, restraint, and iteration.
+- Apple's current HIG design principles for purpose, agency, responsibility, familiarity, flexibility, simplicity, craft, and delight.
 - Taste-Skill for thinking about design variance and visual density.
 - Supanova's redesign workflow for diagnosing an existing UI before changing it.
 
@@ -82,9 +85,21 @@ Then decide:
 - Icon family and stroke/fill rules.
 - Motion character and feedback behavior.
 
-Do not combine several unrelated visual styles. Do not choose a style because it is trendy.
+Default to restrained minimalism with one clear focal point and a quiet supporting interface. Let the product domain provide its distinctive character. Do not combine unrelated styles or choose a look because it is trendy. M3 Expressive should be applied selectively so expressive components do not overwhelm the minimalist composition.
 
-### 3.1 Enforce a minimal visible-copy budget
+### 3.1 Create and critique a design plan before implementation
+
+For a new app or product-wide redesign, write a compact design plan before styling screens. Include:
+- A one-sentence visual thesis grounded in the product's domain and primary user task.
+- Four to six named brand anchor colors, their roles, and the intended light/dark direction; map them into semantic tokens rather than using them as arbitrary decoration.
+- The type families and roles for headings, body text, controls, and numeric data.
+- A layout concept with alignment, information density, focal point, and a small wireframe when it clarifies structure.
+- Shape, surface, component, and motion rules, including where M3 Expressive adds useful emphasis.
+- The Apple design principles most relevant to the product and how minimalist composition will preserve discoverability.
+
+Critique the plan before writing UI code. Ask whether its palette, typography, and layout are specific to this product or interchangeable with any generic app. Reject default card grids, decorative gradients, repeated entrance animations, filler labels, and other template patterns unless the brief gives them a real purpose. Keep one memorable visual decision and let the rest of the screen support it. See [frontend-design-method.md](frontend-design-method.md).
+
+### 3.2 Enforce a minimal visible-copy budget
 
 Default to **almost no explanatory microcopy**. A screen should contain only the words needed to identify content, label controls, show values, expose actions, communicate meaningful state, or explain a consequential/non-obvious choice.
 
@@ -111,7 +126,7 @@ Use semantic names such as page, surface, raised surface, inset surface, primary
 
 Create a small set of reusable product components only after the visual rules are clear. Reuse nearby project conventions where they are sound; do not introduce a second design system for one screen.
 
-Read references/design-foundations.md before making product-wide visual decisions.
+Read references/design-foundations.md and references/apple-design-principles.md before making product-wide visual decisions. Read references/frontend-design-method.md when establishing a new visual direction or critiquing a redesign.
 
 ### 5. Use Material 3 deliberately
 
@@ -128,6 +143,22 @@ Rules:
 - Prefer native components when their behavior fits. Customize them through the shared theme before creating one-off replacements.
 
 Read references/design-foundations.md and references/material-3-expressive.md for the implementation rules. Use the M3 Expressive guide when choosing expressive color, typography, shapes, components, or motion.
+
+### 5.1 Apply Apple's principles and restrained minimalism
+
+Use the current eight principles in [apple-design-principles.md](apple-design-principles.md) as product-quality requirements. In practice:
+- Make the product's purpose and primary action immediately understandable.
+- Keep users in control with predictable navigation, clear feedback, and recovery from mistakes.
+- Treat privacy, permissions, accessibility, and consequential actions responsibly.
+- Reuse familiar patterns and keep similar controls behaviorally consistent.
+- Adapt to supported devices, input modes, and text sizes.
+- Remove friction and visual noise without hiding useful functions or information.
+- Refine typography, alignment, component states, performance, and motion.
+- Let delight come from useful, product-relevant details rather than decoration.
+
+Apple HIG is authoritative for iOS. On Android, keep Android navigation, system behavior, and Material components authoritative; apply Apple's product principles without importing iOS-specific controls. For cross-platform apps, share product principles and brand tokens while adapting interactions to each platform.
+
+Use minimalism as a visual discipline: neutral supporting surfaces, a compact palette, deliberate whitespace, clear typography, few containers, and one dominant focal point. Do not make an interface cryptic, unlabeled, or functionally incomplete in pursuit of visual sparseness.
 
 ### 6. Apply the FlClash lessons selectively
 
@@ -155,7 +186,7 @@ Design each screen for its real content and states:
 
 Use platform-appropriate touch targets: generally at least 48 dp on Android and 44 pt on iOS. Do not make a critical action gesture-only. Do not rely on hover for touch devices.
 
-Read references/native-mobile-patterns.md when designing navigation, settings, lists, forms, dashboards, or sheets. Read references/material-3-expressive.md before applying expressive treatments.
+Read references/native-mobile-patterns.md when designing navigation, settings, lists, forms, dashboards, or sheets. Read references/material-3-expressive.md before applying expressive treatments. Read references/apple-design-principles.md when evaluating user agency, simplicity, platform fit, and product craft.
 
 ### 8. Implement, run, inspect, and refine
 
@@ -189,6 +220,10 @@ Read references/visual-review.md before final delivery.
 - Explanatory microcopy under every heading, descriptive sentences on obvious settings rows, duplicated labels, decorative captions, or paragraphs that narrate an obvious interface.
 - Adding visible copy to fill empty space, or shrinking type to fit copy that should have been removed.
 - Removing essential permission, validation, destructive-action, error, or accessibility information in the name of minimalism.
+- Hiding common functionality behind obscure gestures or nested menus just to make the screen look sparse.
+- Copying iOS navigation, controls, or system chrome into Android without a platform reason.
+- Treating M3 Expressive as permission to decorate every component.
+- Accepting generic AI design defaults without checking whether they fit the product brief.
 - Web-only interaction patterns forced into native apps.
 - A single screenshot used to claim the entire app is polished.
 - Invented placeholder data that hides real content-density problems.
@@ -196,7 +231,9 @@ Read references/visual-review.md before final delivery.
 ## Completion criteria
 
 A design task is complete when:
-- The visual thesis and semantic tokens are coherent.
+- The visual thesis and semantic tokens are coherent and product-specific.
+- The current Apple design principles have been considered, with user control, responsibility, simplicity, and craft reflected in the experience.
+- Minimalist composition removes visual noise while preserving discoverability, necessary information, and accessibility.
 - Screens reflect the product's real task hierarchy.
 - The UI behaves correctly on the target platform.
 - Relevant states and accessibility needs have been addressed.

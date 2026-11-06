@@ -45,6 +45,13 @@ Complete this before designing a new app or making a product-wide redesign. Keep
 - Icon family:
 - Motion direction:
 
+## Visible-copy policy
+
+- Default: concise labels and values; no explanatory microcopy.
+- Which explanations are essential for safety, permissions, or non-obvious decisions?
+- Which subtitles, helper lines, captions, or slogans should be omitted?
+- What is the shortest wording for each necessary message?
+
 ## Screen inventory
 
 For each screen, define:

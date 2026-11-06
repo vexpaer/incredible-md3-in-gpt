@@ -149,3 +149,28 @@ Avoid:
 - A visual system that looks polished in one screenshot but breaks with real data.
 
 The goal is a small, explainable set of decisions that makes every screen feel like part of the same product.
+
+
+## 11. Copy and visual density: remove explanatory noise
+
+A clean interface does not narrate itself. Keep visible text to the words users need to identify, choose, act, understand a meaningful state, or recover from a problem.
+
+Default to:
+- One concise screen title.
+- Clear section names only when they improve scanning.
+- Short control labels.
+- Values shown once, close to the control or metric they describe.
+- Brief status and action feedback.
+
+Do not default to:
+- A subtitle beneath every screen title.
+- A descriptive sentence beneath every settings row.
+- Captions that repeat the title, icon, value, or control label.
+- Decorative eyebrow labels, marketing copy, and generic "manage/customize/your experience" paragraphs.
+- Small gray text used as filler.
+
+Whitespace is a layout decision, not a vacancy that needs to be filled with copy. Prefer hierarchy, alignment, grouping, and meaningful state to explanatory paragraphs.
+
+Keep concise explanations only when they materially affect a decision or safe action: permissions, destructive operations, unfamiliar advanced settings, non-obvious consequences, validation, errors, and useful empty states. Preserve accessibility labels and form labels even when the visible UI is minimal.
+
+Use the full rules and examples in [copy-discipline.md](copy-discipline.md).

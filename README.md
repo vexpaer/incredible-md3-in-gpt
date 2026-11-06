@@ -53,7 +53,7 @@ The skill is an original synthesis informed by:
 - [Taste-Skill](https://github.com/Leonxlnx/taste-skill) — adjustable design variance and visual-density thinking.
 - [Supanova Design Skill](https://github.com/uxjoseph/supanova-design-skill) — design diagnosis and focused redesign workflow; its landing-page-specific prescriptions are not treated as mobile-app rules.
 - [Claude Design](https://claude.com/product/design) — importing real design systems, grounding prototypes in code and screenshots, targeted iteration, and design-to-code handoff.
-- [FlClash](https://github.com/chen08209/FlClash) — a real cross-platform app that combines Material You foundations with a carefully maintained product-specific UI system.
+- [FlClash](https://github.com/chen08209/FlClash) — a cross-platform app with a Material You / MD3 foundation, explicit M3 Expressive shape usage, Apple-influenced interaction, and a carefully maintained product-specific UI system.
 - Official [Android design guidance](https://developer.android.com/design/ui/mobile), [Material 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3), [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/), and [Flutter adaptive design](https://docs.flutter.dev/ui/adaptive-responsive).
 
 These projects are references, not dependencies. Their code, assets, and distinctive screens are not bundled or copied into this repository.

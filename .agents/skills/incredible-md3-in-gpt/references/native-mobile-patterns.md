@@ -21,8 +21,9 @@ Settings are usually a scannable list, not a dashboard of cards.
 
 Recommended structure:
 - Group related settings under clear section headings.
-- Use a concise title and optional supporting description.
+- Use a concise title; omit supporting descriptions by default.
 - Put the current value or control at the trailing edge when it remains understandable.
+- Do not add a second explanatory line to every setting. Show a subtitle only when the setting name and current value cannot communicate a consequential or non-obvious behavior.
 - Use dividers or spacing to distinguish groups; avoid wrapping every row in an independent card.
 - Keep destructive actions visually distinct and confirm only when the consequence warrants it.
 - Use a detail page or sheet for complex settings instead of crowding the root settings list.
@@ -85,10 +86,10 @@ Use a dialog for a short, focused decision. Use a sheet for a task that benefits
 A polished app defines more than the successful state.
 
 - Loading: communicate that work is happening; preserve layout stability.
-- Empty: explain why there is no content and offer the next useful action when one exists.
-- Offline: distinguish unavailable network data from an empty result.
-- Error: describe the problem in user language and provide a recovery action where possible.
-- Permission required: explain why the permission is needed at the moment it becomes relevant.
+- Empty: state the absence briefly and offer one useful next action when one exists; avoid an explanatory paragraph.
+- Offline: distinguish unavailable network data from an empty result with a concise status.
+- Error: describe the problem in user language and provide a recovery action where possible; omit generic troubleshooting essays.
+- Permission required: explain why the permission is needed at the moment it becomes relevant, in one specific sentence when possible.
 - Success: confirm the completed action and expose the resulting state.
 - Disabled: show why an action cannot be taken when that reason is not obvious.
 
@@ -130,3 +131,8 @@ Do not simply stretch a phone column across a tablet. Reconsider navigation, con
 - React Native: inspect whether the app is intended to feel native on iOS, Android, or both; use platform-specific behavior where needed.
 
 Do not assume a web CSS pattern maps cleanly to a native framework. If the stack is unknown and implementation-specific guidance would change the solution, inspect the project or ask one focused question.
+
+
+## Visible copy
+
+Use [copy-discipline.md](copy-discipline.md) as the default policy for every screen. In particular, settings, dashboards, and frequently used utility screens should not be filled with subtitles, helper paragraphs, duplicated labels, or tiny descriptive text. Keep essential instructions, errors, permissions, and consequential warnings concise and contextual.

@@ -54,7 +54,7 @@ A richer palette should make information easier to understand, not make the scre
 - Do not make every card, button, chip, and sheet maximally rounded.
 - Avoid mixing arbitrary radii with system shape tokens.
 
-The FlClash surface guide is a useful example: it references Material 3 Expressive shapes for an empty-state glyph while keeping the surrounding interface disciplined.
+FlClash's UI work guide is a useful example: it references a Material 3 Expressive shape from `material_new_shapes` for an empty-state glyph while keeping the surrounding interface disciplined.
 
 ## 5. Typography: create hierarchy without inflating everything
 

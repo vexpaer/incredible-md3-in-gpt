@@ -13,6 +13,7 @@ Contributions should make the skill more useful for designing and reviewing real
 ## Avoid
 
 - Generic lists of trendy visual styles.
+- Explanatory microcopy, redundant subtitles, repeated setting descriptions, decorative captions, or tiny gray filler text added to native app screens.
 - Rules that prescribe gradients, glass, giant radii, bento grids, or animations for every app.
 - Web-only patterns presented as native mobile guidance.
 - Framework-specific code presented as universal advice.
@@ -24,4 +25,5 @@ Contributions should make the skill more useful for designing and reviewing real
 - [ ] The guidance is actionable and does not conflict with platform accessibility.
 - [ ] Any external claim has a source link in references/research-sources.md.
 - [ ] The main SKILL.md remains concise and links to detailed references.
+- [ ] Visible UI copy is minimal; each remaining explanatory line is essential and contextual.
 - [ ] Paths and installation instructions remain correct.

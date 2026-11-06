@@ -10,6 +10,7 @@ Last source review: 2026-11-06.
 
 - [Android design for mobile](https://developer.android.com/design/ui/mobile) — current Android foundations, styles, layout, behaviors, components, and accessibility.
 - [Material 3 in Jetpack Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) — official Material You and Material 3 Expressive implementation; explains M3 Expressive as an expansion covering theming, components, motion, typography, and more.
+- [A more personal, expressive phone experience](https://blog.google/products-and-platforms/platforms/android/material-3-expressive-android-wearos-launch/) — Google's Android phone announcement: M3 Expressive builds on Material You with more personalization, spring motion, responsive components, and emphasized typography.
 - [Material components for mobile](https://developer.android.com/design/ui/mobile/guides/components/material-overview) — containment, navigation, selection, and input patterns.
 - [Android layout and navigation patterns](https://developer.android.com/design/ui/mobile/guides/layout-and-content/layout-and-nav-patterns) — adaptive navigation and layout choices.
 

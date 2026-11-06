@@ -48,8 +48,8 @@ This skill translates those practices into repository inspection, screen referen
 ## Product case study
 
 - [FlClash](https://github.com/chen08209/FlClash) — cross-platform Flutter proxy client. Its README describes a Material You visual foundation with Apple-style interaction.
-- [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — a detailed example of tonal surface hierarchy, restrained state color, selective elevation, and a concrete Material 3 Expressive shape used in an empty state.
-- [FlClash UI work skill](https://github.com/chen08209/FlClash/blob/main/.agents/skills/ui-work/SKILL.md) — component ownership, reusable UI primitives, glyphs, typography, sheets, and interaction conventions.
+- [FlClash surface rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — a detailed example of tonal surface hierarchy, restrained state color, and selective elevation.
+- [FlClash UI work skill](https://github.com/chen08209/FlClash/blob/main/.agents/skills/ui-work/SKILL.md) — component ownership, reusable UI primitives, glyphs, typography, sheets, and interaction conventions; explicitly references a Material 3 Expressive shape from `material_new_shapes` for an empty-state glyph.
 - [FlClash theme settings](https://github.com/chen08209/FlClash/blob/main/lib/views/theme.dart) — theme previews and user-facing theme controls.
 - [FlClash theme manager](https://github.com/chen08209/FlClash/blob/main/lib/manager/theme_manager.dart) — centralized theme and system UI behavior.
 - [FlClash dashboard style](https://github.com/chen08209/FlClash/blob/main/lib/views/dashboard/style.dart) — semantic colors, typography, shape, and shadow tokens.

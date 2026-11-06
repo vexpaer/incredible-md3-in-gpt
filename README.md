@@ -32,14 +32,15 @@ This skill changes the workflow:
 4. Use Material 3 as a foundation, not as a finished visual identity.
 5. Borrow the strongest product-design lessons from FlClash: tonal surface hierarchy, restrained state color, reusable primitives, deliberate theme behavior, and adaptive layouts.
 6. Design real screen states and platform interactions, not just a static happy-path mockup.
-7. Run the app, inspect screenshots at multiple sizes and themes, fix defects, and inspect again.
+7. Keep visible copy minimal: remove explanatory subtitles and helper text unless they change a decision or enable a safe action.
+8. Run the app, inspect screenshots at multiple sizes and themes, fix defects, and inspect again.
 
 ## Design philosophy
 
 - **Product first:** task clarity and information hierarchy outrank decoration.
 - **MD3 as a system:** use semantic color roles, type roles, shape, elevation, and state layers consistently.
 - **A distinct visual point of view:** make deliberate choices for the product instead of accepting framework defaults.
-- **Restraint:** cards, borders, shadows, gradients, blur, and animation each need a reason.
+- **Restraint:** cards, borders, shadows, gradients, blur, animation, and visible copy each need a reason. No explanatory microcopy by default.
 - **Native behavior:** respect Android and iOS conventions instead of forcing one platform's patterns everywhere.
 - **Evidence-based polish:** a UI is not visually verified until the running app has been inspected.
 
@@ -51,6 +52,7 @@ The skill is an original synthesis informed by:
 - [Anthropic Frontend Design](https://github.com/anthropics/claude-code/tree/main/plugins/frontend-design) — intentional visual direction and resistance to generic templates.
 - [Taste-Skill](https://github.com/Leonxlnx/taste-skill) — adjustable design variance and visual-density thinking.
 - [Supanova Design Skill](https://github.com/uxjoseph/supanova-design-skill) — design diagnosis and focused redesign workflow; its landing-page-specific prescriptions are not treated as mobile-app rules.
+- [Claude Design](https://claude.com/product/design) — importing real design systems, grounding prototypes in code and screenshots, targeted iteration, and design-to-code handoff.
 - [FlClash](https://github.com/chen08209/FlClash) — a real cross-platform app that combines Material You foundations with a carefully maintained product-specific UI system.
 - Official [Android design guidance](https://developer.android.com/design/ui/mobile), [Material 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3), [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/), and [Flutter adaptive design](https://docs.flutter.dev/ui/adaptive-responsive).
 
@@ -63,6 +65,7 @@ These projects are references, not dependencies. Their code, assets, and distinc
 - references/flclash-case-study.md — design and architecture lessons from FlClash.
 - references/native-mobile-patterns.md — navigation, lists, settings, forms, dashboards, states, and adaptive behavior.
 - references/visual-review.md — screenshot workflow, acceptance gates, and a scoring rubric.
+- references/copy-discipline.md — strict rules for minimal visible copy and removing explanatory microcopy.
 - references/research-sources.md — source index and attribution notes.
 - templates/design-brief.md — a compact brief to complete before implementation.
 - templates/visual-review.md — a repeatable review report.

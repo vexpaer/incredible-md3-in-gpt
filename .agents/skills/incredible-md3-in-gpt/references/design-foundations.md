@@ -1,6 +1,6 @@
 # Design foundations: turning MD3 into a product identity
 
-Material Design 3 is a system of design decisions: color, type, shape, components, state, motion, and adaptive behavior. A good app uses those decisions consistently while making a product-specific visual choice. A default theme with every component enabled is only a starting point.
+Material Design 3 is a system of design decisions: color, type, shape, components, state, motion, and adaptive behavior. Material 3 Expressive expands this foundation with research-backed updates to theming, components, motion, typography, and more. A good app uses these decisions consistently while making a product-specific visual choice. A default theme with every component enabled is only a starting point.
 
 ## 1. Start with a visual thesis
 
@@ -174,3 +174,21 @@ Whitespace is a layout decision, not a vacancy that needs to be filled with copy
 Keep concise explanations only when they materially affect a decision or safe action: permissions, destructive operations, unfamiliar advanced settings, non-obvious consequences, validation, errors, and useful empty states. Preserve accessibility labels and form labels even when the visible UI is minimal.
 
 Use the full rules and examples in [copy-discipline.md](copy-discipline.md).
+
+
+## 12. Material 3 Expressive: purposeful expression
+
+M3 Expressive extends the MD3 system across theming, components, motion, typography, and shape. Use it as a first-class direction when it fits the product and target platform.
+
+- Expression should strengthen hierarchy and recognition, not add decoration indiscriminately.
+- Give one or two high-value moments emphasis; keep repeated rows, settings, logs, and dense technical data calm.
+- Use richer color roles semantically and preserve readable on-color pairings.
+- Use expressive shapes where they communicate grouping, identity, or state. Avoid maximizing corner radii on every component.
+- Use variable typography only where supported and where it improves hierarchy.
+- Use spring motion and shape morphing to explain spatial relationships or state changes; respect reduced motion.
+- Do not add a hero moment to every screen.
+- Keep the minimal-copy policy intact. Expressive design does not require subtitles, labels that repeat content, or explanatory filler.
+
+Implementation differs by stack: Jetpack Compose documents M3 Expressive support; Flutter requires checking the actual package/API support; iOS should follow HIG and adopt only the transferable design principles.
+
+Read [material-3-expressive.md](material-3-expressive.md) for the detailed guidance and platform routing.

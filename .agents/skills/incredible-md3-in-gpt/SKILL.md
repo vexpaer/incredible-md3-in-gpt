@@ -62,6 +62,8 @@ When available, consult complementary agent guidance:
 - Taste-Skill for thinking about design variance and visual density.
 - Supanova's redesign workflow for diagnosing an existing UI before changing it.
 
+Claude Design is also a useful workflow reference: derive a design system from the real codebase and design files, use screenshots and existing components as context, explore alternatives when the direction is uncertain, then refine with precise element-level feedback and direct layout adjustments. Keep the design system and implementation in sync. Borrow this workflow, not Claude Design's generated visual aesthetic.
+
 These are complementary references, not prerequisites. Do not install dependencies or copy their skill files just to use this skill. Do not apply landing-page rules to native app screens.
 
 For each benchmark, inspect more than its hero or home screen when possible: look at settings, lists, details, dialogs, empty states, theme behavior, and small-screen behavior. Record the design decisions that are relevant to this product. Do not copy layouts, brand assets, code, or distinctive screens.
@@ -81,6 +83,18 @@ Then decide:
 - Motion character and feedback behavior.
 
 Do not combine several unrelated visual styles. Do not choose a style because it is trendy.
+
+### 3.1 Enforce a minimal visible-copy budget
+
+Default to **almost no explanatory microcopy**. A screen should contain only the words needed to identify content, label controls, show values, expose actions, communicate meaningful state, or explain a consequential/non-obvious choice.
+
+Do not add a subtitle beneath every title, descriptions beneath every setting, captions that repeat visible labels, decorative eyebrow text, marketing slogans, or paragraphs explaining obvious controls. Never add small gray text merely to make a screen look more complete. Never shrink type to fit unnecessary copy.
+
+Use a supporting sentence only when it changes a decision or enables a safe next action: permissions, destructive actions, unfamiliar advanced settings, non-obvious consequences, field constraints, errors, or an empty state with a useful next step. Keep it short and next to the relevant control.
+
+Keep accessibility semantics even when visible copy is minimal: icon-only controls need accessible names, form fields need labels, and selected/error states must be exposed to assistive technology.
+
+Read references/copy-discipline.md and run its screen-level copy audit before delivery.
 
 ### 4. Define semantic tokens and a component grammar
 
@@ -148,12 +162,15 @@ Read references/native-mobile-patterns.md when designing navigation, settings, l
 Do not stop after generating source code.
 
 1. Implement the visual system and screens using the detected stack.
-2. Run the app in a real device or emulator/simulator when available.
-3. Inspect screenshots at a small phone width, a common phone width, and a large width. Include tablet or landscape when supported.
-4. Inspect both light and dark themes. Check larger system text and reduced motion.
-5. Exercise primary interactions: navigation, back, sheets, forms, selected states, loading, errors, and scrolling.
-6. Fix the largest visual defects first: hierarchy, spacing, density, typography, surface contrast, alignment, clipping, and inconsistent components.
-7. Capture screenshots again after fixes.
+2. For a major redesign, explore two or three genuinely different directions when the best direction is uncertain; choose one against the product tasks and visual thesis. Do not create alternatives just to generate more work.
+3. Run the app in a real device or emulator/simulator when available.
+4. Inspect screenshots at a small phone width, a common phone width, and a large width. Include tablet or landscape when supported.
+5. Inspect both light and dark themes. Check larger system text and reduced motion.
+6. Exercise primary interactions: navigation, back, sheets, forms, selected states, loading, errors, and scrolling.
+7. Give local feedback against the exact screen or element that needs work; use broad changes for structural revisions and precise edits for spacing, alignment, labels, or control behavior.
+8. Run the copy audit. Remove redundant explanations and secondary lines that do not help a real decision.
+9. Fix the largest visual defects first: hierarchy, spacing, density, typography, surface contrast, alignment, clipping, copy noise, and inconsistent components.
+10. Capture screenshots again after fixes.
 
 Use the project's available screenshot or UI-testing tools. For native apps, prefer emulator/simulator or device screenshots; a web preview alone does not verify native behavior. If the environment cannot run the app, perform a static review and clearly state that visual verification was not possible.
 
@@ -169,6 +186,9 @@ Read references/visual-review.md before final delivery.
 - Every action styled as the primary button.
 - Repeating the same layout on every screen regardless of content.
 - Tiny secondary text, low-contrast gray, truncated labels, or fixed heights that break with larger text.
+- Explanatory microcopy under every heading, descriptive sentences on obvious settings rows, duplicated labels, decorative captions, or paragraphs that narrate an obvious interface.
+- Adding visible copy to fill empty space, or shrinking type to fit copy that should have been removed.
+- Removing essential permission, validation, destructive-action, error, or accessibility information in the name of minimalism.
 - Web-only interaction patterns forced into native apps.
 - A single screenshot used to claim the entire app is polished.
 - Invented placeholder data that hides real content-density problems.
@@ -180,5 +200,6 @@ A design task is complete when:
 - Screens reflect the product's real task hierarchy.
 - The UI behaves correctly on the target platform.
 - Relevant states and accessibility needs have been addressed.
+- Visible copy has passed the minimal-copy audit; every remaining explanatory line earns its place.
 - The app has been run and visually inspected, or the lack of runtime verification is explicitly reported.
 - The final summary names the main design decisions, files changed, tests run, and any remaining visual risks.

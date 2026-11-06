@@ -2,13 +2,13 @@
 
 Reference: [chen08209/FlClash](https://github.com/chen08209/FlClash)
 
-FlClash is a cross-platform proxy client built with Flutter. Its README describes the product as using Material You design with Apple-style interaction, including dynamic color, light and dark themes, continuous corners, sheets that snap between heights, and layouts that adapt from phones to desktops. Its current agent-maintained surface guide also explicitly uses a Material 3 Expressive shape for an empty-state glyph. The most accurate reading is therefore a Material You / MD3 foundation, selected M3 Expressive visual elements, and Apple-influenced interaction conventions—not a stock implementation of every M3 Expressive component.
+FlClash is a cross-platform proxy client built with Flutter. Its README describes the product as using Material You design with Apple-style interaction, including dynamic color, light and dark themes, continuous corners, sheets that snap between heights, and layouts that adapt from phones to desktops. Its current agent-maintained UI work guide also explicitly uses a Material 3 Expressive shape from `material_new_shapes` for an empty-state glyph. The most accurate reading is therefore a Material You / MD3 foundation, selected M3 Expressive visual elements, and Apple-influenced interaction conventions—not a stock implementation of every M3 Expressive component.
 
 The useful lesson is not that every app should look exactly like FlClash. The lesson is that a strong product can use Material foundations while maintaining its own deliberate rules for surfaces, typography, components, interaction, and adaptation.
 
 ## Material 3 Expressive in the implementation
 
-The current `.agents/surfaces.md` describes an empty-state glyph placed inside a Material 3 Expressive shape from `material_new_shapes`, with animated entrance choreography. This is a concrete M3 Expressive reference in the source tree. The rest of the interface remains deliberately controlled by FlClash's own semantic surface levels, seeded color scheme, state marks, and component system.
+The current `.agents/skills/ui-work/SKILL.md` describes an empty-state glyph placed inside a Material 3 Expressive shape from `material_new_shapes`, with animated entrance choreography. This is a concrete M3 Expressive reference in the source tree. The rest of the interface remains deliberately controlled by FlClash's own semantic surface levels, seeded color scheme, state marks, and component system.
 
 This distinction matters: FlClash uses expressive elements selectively. It does not make every surface, row, and control loud. Its strongest lesson is how to combine expressive moments with a quiet, tightly controlled interface.
 
@@ -89,7 +89,8 @@ For a redesign:
 ## Source map
 
 - [FlClash README](https://github.com/chen08209/FlClash/blob/main/README.md) — platform scope and stated design direction.
-- [Surface design rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — surface levels, tonal hierarchy, state color, elevation, and the explicit Material 3 Expressive shape usage.
+- [Surface design rules](https://github.com/chen08209/FlClash/blob/main/.agents/surfaces.md) — surface levels, tonal hierarchy, state color, and elevation.
+- [UI work skill](https://github.com/chen08209/FlClash/blob/main/.agents/skills/ui-work/SKILL.md) — component and interaction conventions; explicitly documents the M3 Expressive empty-state shape.
 - [UI work skill](https://github.com/chen08209/FlClash/blob/main/.agents/skills/ui-work/SKILL.md) — component ownership and interaction conventions.
 - [Theme settings](https://github.com/chen08209/FlClash/blob/main/lib/views/theme.dart) — live theme previews and settings UI.
 - [Theme manager](https://github.com/chen08209/FlClash/blob/main/lib/manager/theme_manager.dart) — centralized theme and system UI behavior.

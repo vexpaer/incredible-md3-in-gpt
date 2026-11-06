@@ -1,6 +1,6 @@
 ---
 name: incredible-md3-in-gpt
-description: Use when designing, implementing, redesigning, or reviewing a native mobile app UI for Android or iOS, especially when Material Design 3 is requested or the result looks generic. Covers visual direction, design tokens, native patterns, FlClash-inspired surface hierarchy, adaptive layouts, accessibility, and screenshot-based quality review.
+description: Use when designing, implementing, redesigning, or reviewing a native mobile app UI for Android or iOS, especially when Material Design 3 or Material 3 Expressive is requested or the result looks generic. Covers visual direction, M3 Expressive, design tokens, native patterns, FlClash-inspired surface hierarchy, adaptive layouts, accessibility, minimal UI copy, and screenshot-based quality review.
 ---
 
 # Incredible MD3 in GPT
@@ -9,7 +9,7 @@ Act as the product's design lead and mobile UI engineer. Produce a distinctive, 
 
 ## Core rule
 
-**Material 3 is the foundation; the product's visual identity is the result.** The product's tasks, information architecture, platform conventions, and visual hierarchy determine which components and treatments to use.
+**Material 3 is the foundation; Material 3 Expressive is the richer design vocabulary; the product's visual identity is the result.** The product's tasks, information architecture, platform conventions, and visual hierarchy determine which components and treatments to use.
 
 Priorities, in order:
 
@@ -115,7 +115,7 @@ Read references/design-foundations.md before making product-wide visual decision
 
 ### 5. Use Material 3 deliberately
 
-Use MD3 color roles, typography, shape, state layers, and component behavior as a coherent system. Customize the system to fit the product rather than accepting every default.
+Use MD3 color roles, typography, shape, state layers, and component behavior as a coherent system. Consider M3 Expressive as the preferred richer direction when it serves the product and platform. Customize the system to fit the product rather than accepting every default.
 
 Rules:
 - Prefer a balanced tonal palette with a restrained neutral surface family.
@@ -124,14 +124,14 @@ Rules:
 - Use tonal elevation to establish surface hierarchy; reserve pronounced shadows for genuinely floating elements.
 - Use the type scale as a hierarchy, not as a requirement to display oversized headings on every screen.
 - Apply dynamic color when it supports the product and platform. Preserve brand identity when dynamic color would make the UI unstable or incoherent.
-- Treat Material 3 Expressive as an available direction, not a requirement for every app.
+- Treat Material 3 Expressive as a first-class design direction, not a mandate to maximize decoration. Choose the degree of expression based on product tasks and platform.
 - Prefer native components when their behavior fits. Customize them through the shared theme before creating one-off replacements.
 
-Read references/design-foundations.md for the implementation rules.
+Read references/design-foundations.md and references/material-3-expressive.md for the implementation rules. Use the M3 Expressive guide when choosing expressive color, typography, shapes, components, or motion.
 
 ### 6. Apply the FlClash lessons selectively
 
-Study references/flclash-case-study.md. The most reusable lessons are:
+Study references/flclash-case-study.md. Treat it as a Material You / Material 3 product with explicit M3 Expressive shape usage and Apple-influenced interaction patterns. The most reusable lessons are:
 - Let surface tone and spacing establish structure; reserve strong color for state and action.
 - Give surfaces a small, consistent hierarchy rather than nesting cards indefinitely.
 - Use neutral surfaces as the default canvas; a seed color does not need to tint every surface.
@@ -155,7 +155,7 @@ Design each screen for its real content and states:
 
 Use platform-appropriate touch targets: generally at least 48 dp on Android and 44 pt on iOS. Do not make a critical action gesture-only. Do not rely on hover for touch devices.
 
-Read references/native-mobile-patterns.md when designing navigation, settings, lists, forms, dashboards, or sheets.
+Read references/native-mobile-patterns.md when designing navigation, settings, lists, forms, dashboards, or sheets. Read references/material-3-expressive.md before applying expressive treatments.
 
 ### 8. Implement, run, inspect, and refine
 
